@@ -76,59 +76,57 @@ void one()
 
 void two()
 {
-                for (int i = 1; i <= 5; i++) 
-                {
-                    
-                    for (int j = i; j <= 5; j++) 
-                    {
-                     
-                        cout << "* ";
-                    
-                    }
-                    cout << endl;
 
-                }
+    for (int i = 1; i <= 5; i++)
+    {
+
+        for (int j = i; j <= 5; j++)
+        {
+
+            cout << "* ";
+
+        }
+        cout << endl;
+
+    }
 }
 
 void three()
 {
+    int size;
+    cout << " Введите значение: "; cin >> size;
 
-            for (int i = 0; i <= 5; i++)
+    for (int i = 0; i <= size; i++)
+    {
+
+       for (int j = 0; j <= size; j++)
+       {
+
+            if (j < i)
             {
-
-                 for (int j = 0; j <= 5; j++)
-                 {
-
-                     if (j < i)
-                     {
-                         cout << " ";
-                     }
-                     else
-                     {
-                         cout << "*";
-                     }
-
-
-                 }
-                 cout << endl;
-
-
+               cout << " ";
             }
+            else
+            {
+               cout << "*";
+            }
+       }
+            cout << endl;
+    }
 }
 
 void four()
 {
+    int size;
+    cout << " Введите значение: "; cin >> size;
 
-    int values = 5;
+    int row = size - 1;
 
-    int row = values - 1;
-
-
-    for (int i = 0; i < values; i++)
+    for (int i = 0; i < size; i++)
     {
         char ch = ' ';
 
-        for (int j = 0; j < values; j++)
+        for (int j = 0; j < size; j++)
         {
 
             if (j >= row)
@@ -138,7 +136,7 @@ void four()
             cout << ch;
         }
         cout << endl;
-        row = values - (i + 2);
+        row = size - (i + 2);
 
     }
   
@@ -146,7 +144,6 @@ void four()
 
 void five()
 {
-
    
     for (int i = 0; i <= 10; i++)
     {
@@ -190,14 +187,12 @@ void five()
 
     }
 
-
 }
 
 
 
 void six() 
 {
-
         int a = 0;
 
         for (int i = 0; i < 5; i++)
@@ -208,18 +203,17 @@ void six()
                 if (a % 2 == 0) cout << "+ ";
                 else cout << "- ";
                 a++;
-
             }
             cout << endl;
         }
-
 }
 
 
 void shahmat_doska_figura() 
 {
 
-    int size = 5;
+    int size;
+    cout << " Введите размер доски: "; cin >> size;
 
     for (int i = 0; i < size; i++)
     {
@@ -237,45 +231,36 @@ void shahmat_doska_figura()
                     {
                         cout << '*';
                     }
-
                 }
-
             }
             cout << endl;
         }
-
 
     }
 
 }
 
 
-
-
-
-
-
-
 void  shahmat_doska_figura_BOX()
 {
 
-    int n;
-    cout << " Введите размер доски: "; cin >> n;
+    int size;
+    cout << " Введите размер доски: "; cin >> size;
 
     setlocale(LC_ALL, "C");
-    n++;
-    for (int i = 0; i <= n; i++) 
+    size++;
+    for (int i = 0; i <= size; i++)
     {
     
-        for(int j=0;j<=n;j++)
+        for(int j=0;j<= size;j++)
         {
         
             if (i == 0 && j == 0)cout << UPPER_LEFT_ANGLE;
-            else if (i == 0 && j == n)cout << UPPER_RIGHT_ANGLE;
-            else if (i == n && j == 0)cout << LOWER_LEFT_ANGLE;
-            else if (i == n && j == n)cout << LOWER_RIGHT_ANGLE;
-            else if (i == 0 || i == n)cout << HORIZONTAL_LINE << HORIZONTAL_LINE;
-            else if (j == 0 || j == n)cout << VERTICAL_LINE;
+            else if (i == 0 && j == size)cout << UPPER_RIGHT_ANGLE;
+            else if (i == size && j == 0)cout << LOWER_LEFT_ANGLE;
+            else if (i == size && j == size)cout << LOWER_RIGHT_ANGLE;
+            else if (i == 0 || i == size)cout << HORIZONTAL_LINE << HORIZONTAL_LINE;
+            else if (j == 0 || j == size)cout << VERTICAL_LINE;
             else 
             {
 
@@ -320,9 +305,8 @@ int main()
     cout << "6. " << endl;
     cout << "7.Шахматная доска из звезд  " << endl;
     cout << "8.Шахматная доска из фигур  " << endl;
-    cout << "Выбирете необходимое число";
-
-
+    cout << "9.Таблица Пифагора  " << endl;
+    cout << "Выберите необходимое число : ";
 
     cin >> number;
 
