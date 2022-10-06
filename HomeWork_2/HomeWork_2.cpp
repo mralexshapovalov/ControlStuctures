@@ -1,4 +1,4 @@
-// HomeWork_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+ï»¿// HomeWork_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -35,7 +35,7 @@ using namespace std;
 void  null()
 {
     int size;
-    cout << " Ââåäèòå çíà÷åíèå: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: "; cin >> size;
    
     for (int i = 0; i < size; i++)
     {
@@ -55,7 +55,7 @@ void  null()
 void one()
 {
     int size;
-    cout << " Ââåäèòå çíà÷åíèå: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: "; cin >> size;
 
 
     for (int i = 1; i <= 5; size++)
@@ -75,7 +75,7 @@ void one()
 void two()
 {
     int size;
-    cout << " Ââåäèòå çíà÷åíèå: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: "; cin >> size;
    
     for (int i = 1; i <= size; i++)
     {
@@ -94,7 +94,7 @@ void two()
 void three()
 {
     int size;
-    cout << " Ââåäèòå çíà÷åíèå: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: "; cin >> size;
 
     for (int i = 0; i <= size; i++)
     {
@@ -118,7 +118,7 @@ void three()
 void four()
 {
     int size;
-    cout << " Ââåäèòå çíà÷åíèå: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: "; cin >> size;
 
     int row = size - 1;
 
@@ -212,7 +212,7 @@ void shahmat_doska_figura()
 {
 
     int size;
-    cout << " Ââåäèòå ðàçìåð äîñêè: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾ÑÐºÐ¸: "; cin >> size;
 
     for (int i = 0; i < size; i++)
     {
@@ -244,7 +244,7 @@ void  shahmat_doska_figura_BOX()
 {
 
     int size;
-    cout << " Ââåäèòå ðàçìåð äîñêè: "; cin >> size;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾ÑÐºÐ¸: "; cin >> size;
 
     setlocale(LC_ALL, "C");
     size++;
@@ -293,7 +293,7 @@ int main()
 
 
     int number;
-    cout << "Ïî çàäàíèþ èç ôàéëà " << endl;
+    cout << "ÐŸÐ¾ Ð·Ð°Ð´Ð°Ð½Ð¸ÑŽ Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð° " << endl;
     cout << "0. " << endl;
     cout << "1. " << endl;
     cout << "2. " << endl;
@@ -301,10 +301,10 @@ int main()
     cout << "4. " << endl;
     cout << "5. " << endl;
     cout << "6. " << endl;
-    cout << "7.Øàõìàòíàÿ äîñêà èç çâåçä  " << endl;
-    cout << "8.Øàõìàòíàÿ äîñêà èç ôèãóð  " << endl;
-    cout << "9.Òàáëèöà Ïèôàãîðà  " << endl;
-    cout << "Âûáåðèòå íåîáõîäèìîå ÷èñëî : ";
+    cout << "7.Ð¨Ð°Ñ…Ð¼Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÐºÐ° Ð¸Ð· Ð·Ð²ÐµÐ·Ð´  " << endl;
+    cout << "8.Ð¨Ð°Ñ…Ð¼Ð°Ñ‚Ð½Ð°Ñ Ð´Ð¾ÑÐºÐ° Ð¸Ð· Ñ„Ð¸Ð³ÑƒÑ€  " << endl;
+    cout << "9.Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ÐŸÐ¸Ñ„Ð°Ð³Ð¾Ñ€Ð°  " << endl;
+    cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ : ";
 
     cin >> number;
 
