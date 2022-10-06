@@ -34,18 +34,17 @@ using namespace std;
 
 void  null()
 {
-    
+    int size;
+    cout << " ¬ведите значение: "; cin >> size;
    
-
-
-    for (int i = 0; i < 5; i++) 
+    for (int i = 0; i < size; i++)
     {
 
-        for (int j = 0; j < 5; j++) 
+        for (int j = 0; j < size; j++)
         {
-
             cout << "*";
         }
+
         cout << endl;
     }
 
@@ -53,17 +52,16 @@ void  null()
 }
 
 
-
-
 void one()
 {
+    int size;
+    cout << " ¬ведите значение: "; cin >> size;
 
 
-
-    for (int i = 1; i <= 5; i++) 
+    for (int i = 1; i <= 5; size++)
     {
         
-        for (int j = 1; j <= i; j++) 
+        for (int j = 1; j <= size; j++)
         {
          
             cout << "* ";
@@ -76,11 +74,13 @@ void one()
 
 void two()
 {
-
-    for (int i = 1; i <= 5; i++)
+    int size;
+    cout << " ¬ведите значение: "; cin >> size;
+   
+    for (int i = 1; i <= size; i++)
     {
 
-        for (int j = i; j <= 5; j++)
+        for (int j = i; j <= size; j++)
         {
 
             cout << "* ";
@@ -190,7 +190,6 @@ void five()
 }
 
 
-
 void six() 
 {
         int a = 0;
@@ -274,7 +273,6 @@ void  shahmat_doska_figura_BOX()
     }
 
 }
-
 
 
 void Pifagor_table()
@@ -363,8 +361,5 @@ int main()
         cout << "ERROR";
         break;
     }
-
-
-
 
 }
